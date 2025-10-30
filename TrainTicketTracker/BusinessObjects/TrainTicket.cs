@@ -24,7 +24,7 @@ namespace TrainTicketTracker.BusinessObjects
         private double ticketPrice;
 
         //public properties
-        public string PassagerName { get => passengerName; set => passengerName = value; }
+        public string PassengerName { get => passengerName; set => passengerName = value; }
         public string TicketType { get => ticketType; set => ticketType = value; }
         public string Origin { get => origin; set => origin = value; }
         public string Destination { get => destination; set => destination = value; }
@@ -48,7 +48,7 @@ namespace TrainTicketTracker.BusinessObjects
         //Parameterized
         public TrainTicket(string passengerName, string ticketType, string origin, string destination, string departure, double ticketPrice)
         {
-            this.PassagerName = passengerName;
+            this.PassengerName = passengerName;
             this.TicketType = ticketType;
             this.Origin = origin;
             this.Destination = destination;
@@ -80,7 +80,7 @@ namespace TrainTicketTracker.BusinessObjects
             //    "Ticket Price: " + this.TicketPrice + "\n";
 
             //inline tostring 
-            return $"{PassagerName} | {TicketType} | {Origin} | {Destination} | {Departure} | {TicketPrice}";
+            return $"{PassengerName} | {TicketType} | {Origin} | {Destination} | {Departure} | ${TicketPrice}" + "\n";
         }
     }
 }
